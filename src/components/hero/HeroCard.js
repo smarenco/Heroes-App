@@ -9,7 +9,7 @@ export const HeroCard = ({ id, superhero, heroImages, alter_ego, first_appearanc
         <div className='card'>
             <div className='row no-gutters'>
                 <div className='col-4'>
-                    <img src={heroImages(`./${id}.jpg`)} className='card-img' alt={superhero} />
+                    <img src={heroImages(`Heroes-App/${id}.jpg`)} className='card-img' alt={superhero} />
                 </div>
 
                 <div className='col-8'>
