@@ -9,7 +9,7 @@ export const HeroCard = ({ id, superhero, heroImages, alter_ego, first_appearanc
         <div className='card'>
             <div className='row no-gutters'>
                 <div className='col-4'>
-                    <img src={heroImages(`Heroes-App/${id}.jpg`)} className='card-img' alt={superhero} />
+                    <img src={heroImages(`./${id}.jpg`)} className='card-img' alt={superhero} />
                 </div>
 
                 <div className='col-8'>
@@ -24,7 +24,7 @@ export const HeroCard = ({ id, superhero, heroImages, alter_ego, first_appearanc
                             <small className='text-muted'>{ first_appearance}</small>
                         </p>
 
-                        <Link to={`/hero/${id}`}>
+                        <Link to={`/Heroes-App/hero/${id}`}>
                             Más...
                         </Link>
                         
