@@ -1,7 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 
-export const HeroCard = ({ id, superhero, heroImages, alter_ego, first_appearance, characters  }) => {
+const heroImages = require.context("../../assets", true); //EL TRUE ES PARA QUE BUSQUE EN SUB DIRECTORIOS
+
+export const HeroCard = ({ id, superhero, alter_ego, first_appearance, characters  }) => {
 
     const imagePath = `/assets/${id}.jpg`;
   return (
@@ -24,7 +26,7 @@ export const HeroCard = ({ id, superhero, heroImages, alter_ego, first_appearanc
                             <small className='text-muted'>{ first_appearance}</small>
                         </p>
 
-                        <Link to={`/Heroes-App/hero/${id}`}>
+                        <Link to={`/hero/${id}`}>
                             Más...
                         </Link>
                         
